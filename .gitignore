@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Private course data and generated row-level outputs
+data/**/*.csv
+data/**/*.parquet
+data/**/*.zip
+data/raw/
+data/synthetic/
+artifacts/
+models/
+predictions/
+*.joblib
+*.pkl
+
+# Keep only reviewed aggregate reports
+reports/*.json
+reports/*.csv
+!reports/metrics.json
+!reports/model_comparison.csv
+
+# Environment files
+.env
+.env.*
+!.env.example

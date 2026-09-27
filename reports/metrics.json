@@ -1,0 +1,88 @@
+{
+  "best_model": "xgboost",
+  "best_params": {
+    "colsample_bytree": 0.8,
+    "learning_rate": 0.03,
+    "max_depth": 4,
+    "n_estimators": 300,
+    "reg_alpha": 1.0,
+    "reg_lambda": 2.0,
+    "subsample": 0.9
+  },
+  "dataset": {
+    "churn_rate": 0.4856628674265147,
+    "excluded_constant_columns": [],
+    "excluded_high_missingness_columns": [],
+    "excluded_sensitive_columns": [
+      "HHstatin",
+      "adults",
+      "area",
+      "asl_flag",
+      "crclscod",
+      "creditcd",
+      "dwllsize",
+      "dwlltype",
+      "ethnic",
+      "forgntvl",
+      "income",
+      "infobase",
+      "kid0_2",
+      "kid11_15",
+      "kid16_17",
+      "kid3_5",
+      "kid6_10",
+      "lor",
+      "marital",
+      "numbcars",
+      "ownrent",
+      "prizm_social_one"
+    ],
+    "model_feature_count": 76,
+    "premium_revenue_cutoff": 69.48,
+    "premium_revenue_quantile": 0.75,
+    "random_state": 42,
+    "segment_rows": 25005,
+    "segment_share": 0.25005,
+    "test_rows": 5001,
+    "total_rows": 100000,
+    "train_rows": 20004
+  },
+  "models": {
+    "dummy": {
+      "accuracy": 0.5142971405718856,
+      "brier_score": 0.24979559427046805,
+      "f1": 0.0,
+      "pr_auc": 0.48570285942811436,
+      "precision": 0.0,
+      "recall": 0.0,
+      "roc_auc": 0.5
+    },
+    "logistic_regression": {
+      "accuracy": 0.6028794241151769,
+      "brier_score": 0.23746426862188,
+      "f1": 0.5774468085106383,
+      "pr_auc": 0.6048135876759024,
+      "precision": 0.5975341259357111,
+      "recall": 0.5586661177439275,
+      "roc_auc": 0.6342453838308106
+    },
+    "random_forest": {
+      "accuracy": 0.6048790241951609,
+      "brier_score": 0.23396131880419543,
+      "f1": 0.59375,
+      "pr_auc": 0.6301819797483855,
+      "precision": 0.5930184804928131,
+      "recall": 0.5944833264717991,
+      "roc_auc": 0.6473595044841141
+    },
+    "xgboost": {
+      "accuracy": 0.6190761847630474,
+      "brier_score": 0.2288607954978943,
+      "f1": 0.5944219714711518,
+      "pr_auc": 0.6478742954469434,
+      "precision": 0.6155202821869489,
+      "recall": 0.5747221078633182,
+      "roc_auc": 0.6652420179441392
+    }
+  }
+}
